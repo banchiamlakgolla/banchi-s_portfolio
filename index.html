@@ -1,151 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banchiamlak Golla | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- Navigation -->
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- HEADER -->
+    <header>
+        <h1>Banchiamlak Golla</h1>
+        <p style="color: #cfd8e3; margin-top: 5px;">
+            Software Engineering Student | Frontend Developer | Digital Marketer (Graphics)
+        </p>
 
-<!-- Home / Introduction -->
-<section id="home">
-    <h1>Banchiamlak Golla</h1>
-    <h2>Software Engineering Student | Frontend Developer | Digital Marketer</h2>
-    <p>Hi, I’m a software engineering student passionate about frontend development and digital marketing with a focus on graphics design.</p>
-    <a href="resume.pdf" download class="btn">Download Resume</a>
-</section>
-
-<!-- About Me -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a 3rd-year Software Engineering student with a passion for building software systems and designing appealing web interfaces. I work as an intermediate frontend developer and practice digital marketing with a focus on graphics design. I’ve contributed to projects like Internship & Job Portal, Supermarket Inventory System, and ongoing Student Management, Quiz Game, and Exam Portal projects. My goal is to create impactful software solutions while continuing to develop my design and marketing skills.</p>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div>
-            <h3>Technical Skills</h3>
+        <nav>
             <ul>
-                <li>C++</li>
-                <li>Java</li>
-                <li>MySQL</li>
-                <li>HTML, CSS, JavaScript</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated 3rd-year Software Engineering student with a strong interest in 
+            <b>Frontend Development, Digital Marketing, and Graphics Design</b>.
+            I enjoy building functional, clean, and user-friendly applications. 
+            I’ve contributed to projects like <b>Internship & Job Portal, Supermarket Inventory System</b>, and ongoing projects such as <b>Student Management System, Quiz Game, and Exam Portal</b>. 
+            My goal is to create impactful software solutions while continuously developing my design and marketing skills.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Programming:</b> C++, Java, HTML, CSS, JavaScript</li>
+            <li><b>Database:</b> MySQL</li>
+            <li><b>Frontend / UI:</b> Responsive Web Design, DOM Manipulation, Basic UI/UX</li>
+            <li><b>Digital Marketing:</b> Banner & Poster Design, Social Media Content, Canva, Photoshop Basics</li>
+            <li><b>Soft Skills:</b> Team Collaboration, Problem Solving, Communication, Time Management</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Internship & Job Portal</h3>
+            <p>A C++ & MySQL-based system allowing students to register, search internships, and track applications. Contributed to core features like job posting and application tracking.</p>
+            <ul>
+                <li>Frontend design and UI implementation</li>
+                <li>Job posting and application tracking</li>
+                <li>Database management with MySQL</li>
+                <li>Collaborative development on GitHub</li>
             </ul>
         </div>
-        <div>
-            <h3>Frontend / UI</h3>
+
+        <div class="project-card">
+            <h3>Supermarket Inventory System</h3>
+            <p>Tracks stock, categories, and sales. Contributed to data structure design and item management modules. Implemented using C++ and MySQL (DB assignment).</p>
             <ul>
-                <li>Responsive Web Design</li>
-                <li>DOM Manipulation</li>
-                <li>Basic UI/UX</li>
+                <li>Stock management and transactions</li>
+                <li>CRUD operations for products and suppliers</li>
+                <li>Sales and reporting features</li>
             </ul>
         </div>
-        <div>
-            <h3>Digital Marketing & Graphics</h3>
+
+        <div class="project-card">
+            <h3>Student Management System (Ongoing)</h3>
+            <p>Manages student data, results, and enrollment. Backend logic is implemented using C++ data structures, with optional MySQL backend integration.</p>
             <ul>
-                <li>Banner & Poster Design</li>
-                <li>Social Media Content</li>
-                <li>Canva, Photoshop Basics</li>
+                <li>Linked-list based student records</li>
+                <li>File handling for persistent storage</li>
+                <li>CRUD operations: search, update, delete, sort</li>
             </ul>
         </div>
-        <div>
-            <h3>Soft Skills</h3>
+
+        <div class="project-card">
+            <h3>Quiz Game (Ongoing)</h3>
+            <p>An interactive educational quiz game built with Java and potential MySQL integration.</p>
             <ul>
-                <li>Team Collaboration</li>
-                <li>Problem Solving</li>
-                <li>Communication</li>
-                <li>Time Management</li>
+                <li>Question & answer management</li>
+                <li>Difficulty-based levels</li>
+                <li>Score saving and result display</li>
+                <li>Object-oriented modular design</li>
             </ul>
         </div>
-    </div>
-</section>
 
-<!-- Projects -->
-<section id="projects">
-    <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Exam Portal (Ongoing)</h3>
+            <p>A web-based exam-taking portal contributing to frontend design and question display logic, built with HTML, CSS, and JS.</p>
+            <ul>
+                <li>Frontend design and user interaction</li>
+                <li>Dynamic question display</li>
+                <li>Result calculation and feedback</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="project">
-        <h3>Internship & Job Portal</h3>
-        <p>A C++ & MySQL-based system that allows students to register, search internships, and track applications. I contributed to core features like job posting and application tracking.</p>
-        <p><strong>Tech:</strong> C++, MySQL</p>
-    </div>
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certificate-card">
+            <p>Digital Marketing Certificate – Graphics Focus (2-month course)</p>
+            <img src="images/dm.jpg" alt="Digital Marketing Certificate" class="certificate-img">
+        </div>
+    </section>
 
-    <div class="project">
-        <h3>Supermarket Inventory System</h3>
-        <p>Tracks stock, categories, and sales. I contributed to data structure design and item management modules.</p>
-        <p><strong>Tech:</strong> C++</p>
-    </div>
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Team Project Contributor: System design, frontend development, database organization</li>
+            <li>Collaborated on GitHub for version control</li>
+            <li>Assisted in testing and debugging modules</li>
+        </ul>
+    </section>
 
-    <div class="project">
-        <h3>Student Management System (Ongoing)</h3>
-        <p>A system for managing student data, results, and enrollment. I contribute to backend logic and database structure.</p>
-        <p><strong>Tech:</strong> Java, MySQL</p>
-    </div>
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <h2>Education</h2>
+        <p>BSc. in Software Engineering – 3rd Year</p>
+        <p>Relevant Courses: Data Structures & Algorithms, Object-Oriented Programming, Internet Programming, Computer Organization</p>
+    </section>
 
-    <div class="project">
-        <h3>Quiz Game (Ongoing)</h3>
-        <p>A simple educational quiz game. I built question logic and UI interactions.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JS</p>
-    </div>
-
-    <div class="project">
-        <h3>Exam Portal (Ongoing)</h3>
-        <p>A web-based exam-taking portal. I contribute to frontend design and question display logic.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JS</p>
-    </div>
-
-</section>
-
-<!-- Experience -->
-<section id="experience">
-    <h2>Experience</h2>
-    <ul>
-        <li>Team Project Contributor: System design, frontend development, database organization</li>
-        <li>Collaborated on GitHub for version control</li>
-        <li>Assisted in testing and debugging modules</li>
-    </ul>
-</section>
-
-<!-- Education -->
-<section id="education">
-    <h2>Education</h2>
-    <p>BSc. in Software Engineering – 3rd Year</p>
-    <p>Relevant Courses: Data Structures & Algorithms, Object-Oriented Programming, Internet Programming, Computer Organization</p>
-</section>
-
-<!-- Certifications -->
-<section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-        <li>Digital Marketing Certificate – Graphics Focus (2-month course)</li>
-    </ul>
-</section>
-
-<!-- Contact -->
-<section id="contact">
+    <!-- CONTACT SECTION -->
+    <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/banchiamlakgolla-193b97356" target="_blank">Banchiamlak LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/banchiamlakgolla" target="_blank">Banchiamlak GitHub</a></p>
+    <p>You can reach me through:</p>
+    <ul>
+        <li><b>Email:</b> <a href="mailto:banchiamlakgolla@gmail.com">banchiamlakgolla@gmail.com</a></li>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/banchiamlakgolla-193b97356" target="_blank">Profile Link</a></li>
+        <li><b>GitHub:</b> <a href="https://github.com/banchiamlakgolla" target="_blank">github.com/banchiamlakgolla</a></li>
+    </ul>
 </section>
 
-<script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Banchiamlak Golla — Portfolio</p>
+    </footer>
+
 </body>
+
 </html>
