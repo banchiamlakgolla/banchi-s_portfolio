@@ -1,49 +1,58 @@
-/* General Styles */
+/* ---------- General Styles ---------- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f4f7fa;
     color: #333;
 }
 
-h1, h2, h3 {
-    color: #222;
+/* ---------- Headings ---------- */
+h1 {
+    font-size: 3em;
+    color: #1a73e8;
+    margin-bottom: 10px;
 }
 
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
+h2 {
+    font-size: 2em;
+    color: #6c63ff;
+    margin-bottom: 20px;
 }
 
-/* Navigation */
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ---------- Navigation ---------- */
 nav {
     position: sticky;
     top: 0;
     background-color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s;
 }
 
@@ -51,27 +60,39 @@ nav a:hover {
     color: #1a73e8;
 }
 
-/* Button */
+/* ---------- Sections ---------- */
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    scroll-margin-top: 80px; /* for smooth nav scroll */
+}
+
+/* ---------- Buttons ---------- */
 .btn {
     display: inline-block;
     background-color: #1a73e8;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 25px;
     margin-top: 15px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s;
 }
 
 .btn:hover {
     background-color: #1558b0;
+    transform: translateY(-2px);
 }
 
-/* Skills Section */
+/* ---------- Skills Section ---------- */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .skills-container ul {
@@ -79,16 +100,43 @@ nav a:hover {
     margin-left: 20px;
 }
 
-/* Projects Section */
+/* ---------- Projects Section ---------- */
 .project {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #6c63ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Links */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+/* ---------- Contact Links ---------- */
 a {
     color: #1a73e8;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media(max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
 }
