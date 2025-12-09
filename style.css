@@ -1,142 +1,142 @@
-/* ---------- General Styles ---------- */
+/* ---------- BODY & GENERAL ---------- */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f7fa;
-    color: #333;
+    font-family: "Poppins", sans-serif;
+    background-color: #0D1B2A; /* Dark Blue Background */
+    color: #E0E0E0; /* Default light text */
 }
 
-/* ---------- Headings ---------- */
-h1 {
-    font-size: 3em;
-    color: #1a73e8;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 2em;
-    color: #6c63ff;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* ---------- Navigation ---------- */
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    padding: 12px 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #1a73e8;
-}
-
-/* ---------- Sections ---------- */
-section {
-    padding: 80px 20px;
-    max-width: 1000px;
-    margin: auto;
-    scroll-margin-top: 80px; /* for smooth nav scroll */
-}
-
-/* ---------- Buttons ---------- */
-.btn {
-    display: inline-block;
-    background-color: #1a73e8;
-    color: #fff;
-    padding: 12px 25px;
-    margin-top: 15px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s;
-}
-
-.btn:hover {
-    background-color: #1558b0;
-    transform: translateY(-2px);
-}
-
-/* ---------- Skills Section ---------- */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.skills-container ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-/* ---------- Projects Section ---------- */
-.project {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border-left: 5px solid #6c63ff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
-}
-
-/* ---------- Contact Links ---------- */
+/* ---------- LINKS ---------- */
 a {
-    color: #1a73e8;
+    color: #3BA9FF; /* Bright Aqua/Blue links */
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #1E90FF;
 }
 
-/* ---------- Responsive ---------- */
-@media(max-width: 768px) {
+/* ---------- HEADER ---------- */
+header {
+    background-color: #1B2A47; /* Slightly lighter dark blue */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+header p {
+    color: #C0D6E4;
+    margin-top: 5px;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #E0E0E0;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3BA9FF;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1B2A47; /* Slightly lighter dark blue for contrast */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    color: #E0E0E0;
+}
+
+/* Section headings */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #3BA9FF; /* Accent Blue */
+}
+
+/* Paragraph & list text */
+p, li {
+    color: #E0E0E0;
+    line-height: 1.7;
+}
+
+/* ---------- PROJECT CARDS ---------- */
+.project-card {
+    background: #1B2A47; /* same as section */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.45); /* slightly stronger shadow for separation */
+    color: #E0E0E0;
+}
+
+.project-card h3 {
+    color: #3BA9FF;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.55);
+}
+
+/* ---------- BUTTONS ---------- */
+button, .btn {
+    background: #3BA9FF;
+    color: #0D1B2A;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: #1E90FF;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1B2A47;
+    color: #C0D6E4;
+    margin-top: 50px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:768px) {
     nav ul {
         flex-direction: column;
         text-align: center;
     }
 
-    nav li {
+    nav ul li {
         margin: 10px 0;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr;
     }
 }
