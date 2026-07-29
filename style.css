@@ -130,6 +130,7 @@ footer {
     }
 }
 
+
 .profile-img{
     width:180px;
     height:180px;
@@ -140,8 +141,8 @@ footer {
 }
 
 .certificate-img{
-    width:100%;
-    max-width:400px;
+    width:200%;
+    max-width:500px;
     border-radius:10px;
     margin-top:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.3);
